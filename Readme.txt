@@ -3,7 +3,7 @@
 #output log
 
 #debugger
-  ##inteript
+  ##interrupt
 
   ##run by debugger
 

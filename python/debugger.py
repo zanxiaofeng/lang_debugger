@@ -6,7 +6,7 @@ time.sleep(60)
 #ouput log
 print("test")
 
-#inteript
+#interrupt
 import pdb
 pdb.set_trace()#运行到这行程序会暂停
 

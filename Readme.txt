@@ -10,11 +10,17 @@
 #run shell
 
 #get stack info
+  ##in code
+
   ##by debugger tool
 
   ##by external tool
 
 #profile
-  ##by code
+  ##in code
 
   ##by instrument
+
+#pid
+
+#cwd

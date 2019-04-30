@@ -24,6 +24,10 @@ var yourscript = exec('ls -al .', (error, stdout, stderr) => {
             console.log(stderr);
 });
 
-#get stack info
+# get stack info
 
-#profile
+# profile
+
+# pid
+
+# cwd

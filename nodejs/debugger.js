@@ -8,7 +8,7 @@ sleep(10000);
 # output log
 console.log("test");
 
-# inteript
+# interrupt
 debugger
 
 # run shell

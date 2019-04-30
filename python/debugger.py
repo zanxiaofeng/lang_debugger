@@ -10,7 +10,7 @@ print("test")
 import pdb
 pdb.set_trace()#运行到这行程序会暂停
 
-#run sh
+#run shell
 import subprocess;
 subprocess.call("env")
 subprocess.call("ls","-al",".")

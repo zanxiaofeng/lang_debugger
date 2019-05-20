@@ -3,7 +3,7 @@ package zxf;
 public class Debugger {
     public static void main(String[] args) {
       //sleep 1s
-      //time.Sleep(time.Duration(1)*time.Second)
+      Thread.sleep(1000);
 
       //ouput log
       System.out.print("hello")
@@ -12,11 +12,7 @@ public class Debugger {
       //interrupt
 
       //run shell
-      //out, err := exec.Command("env").Output()
-      //if err != nil {
-      //   log.Fatal(err)
-      //}
-      //fmt.Printf("The env is %s\n", out)
+      Process process = Runtime.getRuntime().exec("env");
 
       //out, err = exec.Command("ls","-al",".").Output()
       //if err != nil {
@@ -25,11 +21,11 @@ public class Debugger {
       //fmt.Printf("The files is %s\n", out)
 
       //get stack info
-      //debug.PrintStack();
+      StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
 
       //profile
 
-      //pid
-      //fmt.Printf("The pid is %d\n", os.Getppid())
+      //pid In Java 9
+      ProcessHandle.current().pid();
     }
 }

@@ -24,8 +24,14 @@ public class Debugger {
       StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
 
       //profile
+      
+      //read config from external
+
+      //format by template
 
       //pid In Java 9
       ProcessHandle.current().pid();
+
+      //cwd
     }
 }

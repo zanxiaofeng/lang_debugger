@@ -35,6 +35,12 @@ func main(){
 
   //profile
 
+  //read config from external
+
+  //format by template
+
   //pid
   fmt.Printf("The pid is %d\n", os.Getppid())
+
+  //cwd
 }

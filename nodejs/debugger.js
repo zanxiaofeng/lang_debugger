@@ -28,6 +28,10 @@ var yourscript = exec('ls -al .', (error, stdout, stderr) => {
 
 # profile
 
+#read config from external
+
+#format by template
+
 # pid
 
 # cwd

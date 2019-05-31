@@ -28,6 +28,10 @@ def func_for_profile():
     time.sleep(20);
 func_for_profile();
 
+#read config from external
+
+#format by template
+
 #pid
 import os;
 print("pid: " + str(os.getpid()));

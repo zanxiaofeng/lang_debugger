@@ -3,7 +3,7 @@
 #output log
 
 #debugger
-  ##interrupt
+  ##interrupt in code
 
   ##run by debugger
 
@@ -20,6 +20,10 @@
   ##in code
 
   ##by instrument
+
+#isolate config from code
+
+#format by template
 
 #pid
 

@@ -1,13 +1,13 @@
 package zxf;
 
 public class Debugger {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
       //sleep 1s
       Thread.sleep(1000);
 
       //ouput log
-      System.out.print("hello")
-      System.out.println(" davis")
+      System.out.print("hello");
+      System.out.println(" davis");
 
       //interrupt
 
@@ -22,15 +22,19 @@ public class Debugger {
 
       //get stack info
       StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+      System.out.println(stackTrace);
 
       //profile
-      
+
       //read config from external
 
       //format by template
 
       //pid In Java 9
-      ProcessHandle.current().pid();
+      //System.out.print(ProcessHandle.current().pid());
+
+      //thread
+      System.out.println(Thread.currentThread());
 
       //cwd
     }

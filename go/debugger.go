@@ -42,5 +42,7 @@ func main(){
   //pid
   fmt.Printf("The pid is %d\n", os.Getppid())
 
+  #goruntine
+
   //cwd
 }

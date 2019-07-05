@@ -27,4 +27,6 @@
 
 #pid
 
+#thread
+
 #cwd

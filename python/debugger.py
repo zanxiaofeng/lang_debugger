@@ -36,6 +36,11 @@ func_for_profile();
 import os;
 print("pid: " + str(os.getpid()));
 
+#thread
+import threading;
+print(threading.currentThread().name)
+print(threading.currentThread().ident)
+
 #cwd
 import os;
 print("cwd: " + os.getcwd());

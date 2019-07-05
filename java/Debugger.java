@@ -37,5 +37,6 @@ public class Debugger {
       System.out.println(Thread.currentThread());
 
       //cwd
+      System.out.println(System.getProperty("user.dir"));
     }
 }

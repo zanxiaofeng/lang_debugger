@@ -1,3 +1,5 @@
+const process = require('process')
+
 # sleep
 function sleep(milliSeconds) { 
     var startTime = new Date().getTime(); 
@@ -33,5 +35,7 @@ var yourscript = exec('ls -al .', (error, stdout, stderr) => {
 #format by template
 
 # pid
+cosole.log(process.pid)
 
 # cwd
+cosole.log(process.cwd())

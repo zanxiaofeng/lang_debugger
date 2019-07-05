@@ -42,7 +42,13 @@ func main(){
   //pid
   fmt.Printf("The pid is %d\n", os.Getppid())
 
-  #goruntine
+  //goruntine
 
   //cwd
+
+  dir, err := os.Getwd()
+	if err != nil {
+		log.Fatal(err)
+	}
+  fmt.Println(dir)
 }

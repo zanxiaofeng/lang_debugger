@@ -29,4 +29,6 @@
 
 #thread
 
+#cpu usage
+
 #cwd

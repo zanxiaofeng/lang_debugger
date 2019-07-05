@@ -44,8 +44,9 @@ func main(){
 
   //goruntine
 
-  //cwd
+  //cpu usage
 
+  //cwd
   dir, err := os.Getwd()
 	if err != nil {
 		log.Fatal(err)

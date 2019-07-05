@@ -36,6 +36,8 @@ public class Debugger {
       //thread
       System.out.println(Thread.currentThread());
 
+      //cpu usage
+
       //cwd
       System.out.println(System.getProperty("user.dir"));
     }

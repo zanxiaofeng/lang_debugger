@@ -31,4 +31,10 @@
 
 #cpu usage
 
+#dynamic load
+
+#proxy
+
+#host script
+
 #cwd

@@ -44,6 +44,12 @@ print(threading.currentThread().ident)
 #cpu usage
 print(psutil.cpu_percent())
 
+#dynamic load
+
+#proxy
+
+#host script
+
 #cwd
 import os;
 print("cwd: " + os.getcwd());

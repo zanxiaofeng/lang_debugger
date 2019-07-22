@@ -38,6 +38,12 @@ public class Debugger {
 
       //cpu usage
 
+      //dynamic load
+
+      //proxy
+
+      //host script
+
       //cwd
       System.out.println(System.getProperty("user.dir"));
     }

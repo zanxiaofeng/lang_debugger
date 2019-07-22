@@ -46,6 +46,12 @@ func main(){
 
   //cpu usage
 
+  //dynamic load
+
+  //proxy
+
+  //host script
+
   //cwd
   dir, err := os.Getwd()
 	if err != nil {

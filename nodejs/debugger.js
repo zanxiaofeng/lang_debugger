@@ -30,12 +30,20 @@ var yourscript = exec('ls -al .', (error, stdout, stderr) => {
 
 # profile
 
-#read config from external
+# read config from external
 
-#format by template
+# format by template
 
 # pid
 cosole.log(process.pid)
+
+# cpu usage
+
+# dynamic load
+
+# proxy
+
+# host script
 
 # cwd
 cosole.log(process.cwd())

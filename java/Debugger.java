@@ -12,7 +12,16 @@ public class Debugger {
       //interrupt
 
       //run shell
-      Process process = Runtime.getRuntime().exec("env");
+      try {
+          Process process = Runtime.getRuntime().exec("env");
+          if (process.waitFor(30, TimeUnit.MINUTES)) {
+              System.out.println(process.exitValue());
+          } else {
+              System.out.println("Timeout");
+          }
+      } catch (Exception ex) {
+          ex.printStackTrace();
+      }
 
       //out, err = exec.Command("ls","-al",".").Output()
       //if err != nil {
@@ -36,7 +45,11 @@ public class Debugger {
       //thread
       System.out.println(Thread.currentThread());
 
+      //cpu info
+      int cores = Runtime.getRuntime().availableProcessors();
+
       //cpu usage
+
 
       //dynamic load
 

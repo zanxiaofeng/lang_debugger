@@ -25,9 +25,15 @@
 
 #format by template
 
-#pid
+#current pid
+
+#current process
+
+#other process info
 
 #thread
+
+#cpu info
 
 #cpu usage
 

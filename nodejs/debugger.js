@@ -34,7 +34,7 @@ var yourscript = exec('ls -al .', (error, stdout, stderr) => {
 
 # format by template
 
-# pid
+# current pid
 cosole.log(process.pid)
 
 # cpu usage

@@ -2,6 +2,8 @@
 
 #output log
 
+#read env variable
+
 #debugger
   ##interrupt in code
 

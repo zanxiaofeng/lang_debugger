@@ -7,6 +7,8 @@ time.sleep(10);
 #ouput log
 print("test");
 
+#read env virable
+
 #interrupt
 import pdb;
 #程序将主动暂停并进入pdb调试模式，不需要python -m pdb。按c继续运行。

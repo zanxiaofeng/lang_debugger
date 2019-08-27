@@ -10,6 +10,8 @@ sleep(10000);
 # output log
 console.log("test");
 
+# read env virable
+
 # interrupt
 debugger
 

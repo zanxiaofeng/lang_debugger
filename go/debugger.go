@@ -15,6 +15,8 @@ func main(){
   print("hello")
   println(" davis")
 
+  //read env virable
+
   //interrupt
 
   //run shell

@@ -9,6 +9,9 @@ public class Debugger {
       System.out.print("hello");
       System.out.println(" davis");
 
+      //read env virable
+      String hostIp = System.getenv("PATH")
+
       //interrupt
 
       //run shell

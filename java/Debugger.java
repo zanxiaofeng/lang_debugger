@@ -48,6 +48,9 @@ public class Debugger {
       //thread
       System.out.println(Thread.currentThread());
 
+      //hostname
+      System.out.println(InetAddress.getLocalHost().getHostName());
+
       //cpu info
       int cores = Runtime.getRuntime().availableProcessors();
 

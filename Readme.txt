@@ -31,6 +31,8 @@
 
 #current process
 
+#hostname
+
 #other process info
 
 #thread

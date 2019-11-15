@@ -6,7 +6,10 @@ go build -o debugger debugger.go
 N/A
 
 #调试器模式启动
-gdb ****
+1. gdb
+2. attach <pid>
+3. bt
+
 
 #Profile模式启动
 N/A

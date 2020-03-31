@@ -1,5 +1,7 @@
 package zxf;
 
+import java.util.Arrays;
+
 public class Debugger {
     public static void main(String[] args) throws Exception {
       //sleep 1s
@@ -34,7 +36,7 @@ public class Debugger {
 
       //get stack info
       StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
-      System.out.println(stackTrace);
+      Arrays.stream(stackTrace).forEach(System.out::println);
 
       //profile
 

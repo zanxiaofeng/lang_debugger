@@ -1,14 +1,24 @@
-#编译
+#clean
+rm -fr *.class
+rm -fr zzz
+rm -fr zxf
+
+#编译打包StaticLoader
+javac StaticLoader.java
+mkdir zzz && mv StaticLoader.class zzz/
+jar cvf zzz.jar zzz
+
+
+#编译Debugger
 javac Debugger.java
-
-#Run by class file
 mkdir zxf && mv Debugger.class zxf/
-java -cp . zxf.Debugger
 
-#Run by executable jar
-mkdir zxf && mv Debugger.class zxf/
+#Run Debugger by class file
+java -cp .:zzz.jar zxf.Debugger
+
+#Run Debugger by executable jar
 jar cvfe zxf.jar zxf.Debugger zxf
-java -jar zxf.jar
+java -Xbootclasspath/a:./zzz.jar -jar zxf.jar
 
 #包加载路径(编译时、运行时)
 N/A

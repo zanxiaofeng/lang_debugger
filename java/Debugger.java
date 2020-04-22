@@ -78,8 +78,9 @@ public class Debugger {
       //font && font-family
       GraphicsEnvironment e = GraphicsEnvironment.getLocalGraphicsEnvironment();
       Font[] fonts = e.getAllFonts();
+      System.out.println("(name, family, isBold, isItalic, isPlain)");
       for (int i = 0; i < fonts.length; i++) {
-          System.out.println(String.format("(%s, %s)", fonts[i].getFontName(), fonts[i].getFamily()));
+          System.out.println(String.format("(%s, %s, %s, %s, %s)", fonts[i].getFontName(), fonts[i].getFamily(), fonts[i].isBold(), fonts[i].isItalic(), fonts[i].isPlain()));
       }
 
       String[] fontFamilyNames = e.getAvailableFontFamilyNames();

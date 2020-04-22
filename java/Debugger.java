@@ -3,6 +3,7 @@ package zxf;
 import java.util.Arrays;
 import java.net.InetAddress;
 import java.util.concurrent.TimeUnit;
+import java.awt.*;
 
 public class Debugger {
     public static void main(String[] args) throws Exception {
@@ -73,5 +74,17 @@ public class Debugger {
 
       //cwd
       System.out.println("user.dir: " + System.getProperty("user.dir"));
+
+      //font && font-family
+      GraphicsEnvironment e = GraphicsEnvironment.getLocalGraphicsEnvironment();
+      Font[] fonts = e.getAllFonts();
+      for (int i = 0; i < fonts.length; i++) {
+          System.out.println(String.format("(%s, %s)", fonts[i].getFontName(), fonts[i].getFamily()));
+      }
+
+      String[] fontFamilyNames = e.getAvailableFontFamilyNames();
+      for (int i = 0; i < fontFamilyNames.length; i++) {
+          System.out.println(fontFamilyNames[i]);
+      }
     }
 }

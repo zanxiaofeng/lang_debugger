@@ -49,4 +49,10 @@
 
 #cwd
 
+#uuid
+
+#hex string(1 byte to 2 chars)
+
+#base64 string(3 bytes to 4 chars)
+
 #font&font-family

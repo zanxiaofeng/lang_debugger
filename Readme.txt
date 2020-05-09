@@ -51,6 +51,8 @@
 
 #uuid
 
+# byte[] && stream(in, out)
+
 #byte <-> char encoding
 
 #hex string(1 byte to 2 chars)

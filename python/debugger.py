@@ -78,3 +78,16 @@ print(psutil.cpu_percent())
 #cwd
 import os;
 print("cwd: " + os.getcwd());
+
+#uuid
+import uuid
+print(uuid.uuid1())
+
+#byte <-> char encoding
+'abc'.encode('utf-8')
+b'\x31\x32\x33'.decode('utf-8')
+
+#hex string(1 byte to 2 chars)
+
+#base64 string(3 bytes to 4 chars)
+

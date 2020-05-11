@@ -51,7 +51,9 @@
 
 #uuid
 
-# byte[] && stream(in, out)
+#byte[] && stream(in, out)
+
+#reader && writer
 
 #byte <-> char encoding
 

@@ -31,3 +31,6 @@ N/A
 
 #Tools
 BTrace
+
+#dependency
+mvn dependency:tree

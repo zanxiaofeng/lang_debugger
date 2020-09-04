@@ -101,4 +101,17 @@ public class Debugger {
           System.out.println(fontFamilyNames[i]);
       }
     }
+
+    public static String getIP() throws SocketException {
+        for(Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces(); en.hasMoreElements();) {
+          NetworkInterface inetf = en.nextElement();
+          for(Enumeration<InetAddress> enumIpAddr = inetf.getInetAddresses(); enumIpAddr.hasMoreElements();) {
+             InetAddress inetAddress = enumIpAddr.nextElement();
+             if (!inetAddress.isLoopbackAddress() && (inetAddress instanceof Inet4Address)) {
+                return inetAddress.getHostAddress();
+             }
+          }
+        }
+        return null;
+    }
 }

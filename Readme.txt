@@ -33,6 +33,8 @@
 
 #hostname
 
+#ips
+
 #other process info
 
 #thread

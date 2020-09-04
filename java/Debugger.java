@@ -59,6 +59,19 @@ public class Debugger {
       //hostname
       System.out.println("HostName: " + InetAddress.getLocalHost().getHostName());
 
+      //IPs
+      Enumeration e = NetworkInterface.getNetworkInterfaces();
+      while(e.hasMoreElements())
+      {
+          NetworkInterface n = (NetworkInterface) e.nextElement();
+          Enumeration ee = n.getInetAddresses();
+          while (ee.hasMoreElements())
+          {
+              InetAddress i = (InetAddress) ee.nextElement();
+              System.out.println(i.getHostAddress());
+          }
+      }
+
       //cpu info
       int cores = Runtime.getRuntime().availableProcessors();
       System.out.println("cores: " + cores);

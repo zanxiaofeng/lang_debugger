@@ -4,6 +4,10 @@ import java.util.Arrays;
 import java.net.InetAddress;
 import java.util.concurrent.TimeUnit;
 import java.awt.*;
+import javax.script.Bindings;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 
 public class Debugger {
     public static void main(String[] args) throws Exception {
@@ -84,6 +88,17 @@ public class Debugger {
       //proxy
 
       //host script
+      ScriptEngine engine = new ScriptEngineManager().getEngineByExtension("js");
+      Bindings bindings = engine.createBindings();
+      bindings.put("a", 3600);
+      bindings.put("b", 14);
+      bindings.put("c", 4);
+      try {
+          Object d = engine.eval("a * b * c", bindings);
+          System.out.println(d);
+      } catch (ScriptException e) {
+          e.printStackTrace();
+      }
 
       //cwd
       System.out.println("user.dir: " + System.getProperty("user.dir"));

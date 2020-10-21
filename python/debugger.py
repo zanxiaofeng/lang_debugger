@@ -8,6 +8,7 @@ time.sleep(10);
 print("test");
 
 #read env virable
+print(os.environ["PATH"])
 
 #interrupt
 import pdb;
@@ -41,6 +42,7 @@ print("pid: " + str(os.getpid()));
 #current process info
 
 #other process info
+import psutil;
 p = psutil.Process(16031)
 p.name()      #进程名
 p.exe()         #进程的bin路径
@@ -63,7 +65,8 @@ print(threading.currentThread().name)
 print(threading.currentThread().ident)
 
 #cpu info
-
+import psutil;
+psutil.cpu_count()
 
 #cpu usage
 import psutil;
@@ -87,7 +90,8 @@ print(uuid.uuid1())
 'abc'.encode('utf-8')
 b'\x31\x32\x33'.decode('utf-8')
 
-#hex string(1 byte to 2 chars)
+#hex string<=>byte[](1 byte to 2 chars)
 
-#base64 string(3 bytes to 4 chars)
+
+#base64 string<=>byte[](3 bytes to 4 chars)
 

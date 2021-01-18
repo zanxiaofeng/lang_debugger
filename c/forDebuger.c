@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 void funcA() {
 	printf("in funcA");
@@ -14,6 +15,8 @@ void funcC() {
 
 void funcE() {
 	printf("in funcE");
+	//sleep 10 seconds
+	sleep(10);
 }
 
 void funcD() {

@@ -7,11 +7,11 @@ public class ListProviders {
             System.out.println(provider.getName());
 
             provider.stringPropertyNames().stream().forEach(key -> {
-                System.out.println("\t" + key + "\t" + provider.getProperty(key));
+                System.out.println("\tP: " + key + "\t: " + provider.getProperty(key));
             });
 
             provider.getServices().stream().forEach(s -> {
-                System.out.println("==\t" + s.getType() + "\t" + s.getAlgorithm());
+                System.out.println("\tS: " + s.getType() + "\t: " + s.getAlgorithm());
             });
         }
     }

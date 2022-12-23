@@ -27,16 +27,19 @@ It is fair to say that UTF-8 is taking over the world. It is already used for fi
 
 public class UnicodeCases {
     public static void main(String[] args) {
-        String chineseInJava = "ceshi";
+        //For Java String coder=UTF16(1)
+        String chineseInJava = "\u0091测试\u0092";
         byte[] chineseInUTF8Byte = chineseInJava.getBytes(UTF_8);
         byte[] chineseInUTF16LEByte = chineseInJava.getBytes(UTF_16LE);
-        String chineseInUTF8Java = new String(chineseInUTF8Byte, UTF_8);
-        String chineseInUTF16LEJava = new String(chineseInUTF16LEByte, UTF_16LE);
+        String chineseInJavaFromUTF8Bytes = new String(chineseInUTF8Byte, UTF_8);
+        String chineseInJavaFromUTF16LEBytes = new String(chineseInUTF16LEByte, UTF_16LE);
 
-        String englishInJava = "Ts";
+
+        //For Java String coder=LATIN1(0)
+        String englishInJava = "\u0091Ts\u0092";
         byte[] englishInUTF8Byte = englishInJava.getBytes(UTF_8);
         byte[] englishInUTF16LEByte = englishInJava.getBytes(UTF_16LE);
-        String englishInUTF8Java = new String(englishInUTF8Byte, UTF_8);
-        String englishInUTF16LEJava = new String(englishInUTF16LEByte, UTF_16LE);
+        String englishInJavaFromUTF8Bytes = new String(englishInUTF8Byte, UTF_8);
+        String englishInJavaFromUTF16LEBytes = new String(englishInUTF16LEByte, UTF_16LE);
     }
 }

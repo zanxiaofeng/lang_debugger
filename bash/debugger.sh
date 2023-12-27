@@ -8,6 +8,10 @@ echo "just a test"
 
 #debugger::none
 
+#return code
+exit 1 //exit with 1
+exit $? // exit with status of last command.
+
 #run shell
 
 #get stack info::none

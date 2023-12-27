@@ -9,6 +9,8 @@
 
   ##run by debugger
 
+#return code
+
 #run shell
 
 #get stack info

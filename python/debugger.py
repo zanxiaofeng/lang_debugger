@@ -21,6 +21,10 @@ subprocess.call("env");
 #error
 #subprocess.call("ls","-al",".");
 
+#return code
+import sys;
+sys.exit(1);
+
 #get stack info
 import traceback;
 traceback.print_stack();
